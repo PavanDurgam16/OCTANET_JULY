@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coastal Adventure - Explore the Serene Beaches of India</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    Pavan
-  <script src="assets/js/script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>To Do List App</title>
+		<link rel="icon" href="assets/images/icon.jpg" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	</head>
+	<body>
+		<header class="container">
+			<h2><big>&ldquo;</big> Task Planner <big>&rdquo;</big></h2>
+			<div class="taking-task">
+				<input
+					type="text"
+					id="task-input"
+					placeholder="Add your planned tasks here . . ."
+					required />
+				<button type="button" id="add-button">Add</button>
+			</div>
+			<div class="error">
+				<p id="error-msg"></p>
+			</div>
+		</header>
+		<main class="content">
+			<div class="task-header">
+				<div class="task-heading">
+					<div class="description-label">
+						<p>Task Description</p>
+					</div>
+					<div class="date-label">
+						<p>Task Date</p>
+					</div>
+					<div class="time-label">
+						<p>Task Time</p>
+					</div>
+					<div class="edit-label">
+						<p>Edit</p>
+					</div>
+					<div class="delete-label">
+						<p>Delete</p>
+					</div>
+				</div>
+			</div>
+			<hr color="black" />
+			<section class="display-tasks"></section>
+		</main>
+		<script src="assets/js/script.js"></script>
+	</body>
 </html>
