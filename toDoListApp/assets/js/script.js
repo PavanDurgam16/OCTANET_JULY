@@ -4,16 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	const taskContainer = document.querySelector(".display-tasks");
 	const errorMsg = document.getElementById("error-msg");
 
-	let isEditMode = false; // Track whether we are in edit mode
-	let currentTaskContainer = null; // Track the current task container element
-
+	let isEditMode = false;
+	let currentTaskContainer = null;
 	addButton.addEventListener("click", function (event) {
 		event.preventDefault();
-		const taskValue = taskInput.value.trim(); // Trim the task value
-
+		const taskValue = taskInput.value.trim();
 		if (taskValue !== "") {
 			if (isEditMode) {
-				// If we are in edit mode, update the task description
 				const taskDescription = currentTaskContainer.querySelector(
 					".task-description p"
 				);
@@ -144,16 +141,14 @@ document.addEventListener("DOMContentLoaded", function () {
 	const taskContainer = document.querySelector(".display-tasks");
 	const errorMsg = document.getElementById("error-msg");
 
-	let isEditMode = false; // Track whether we are in edit mode
-	let currentTaskContainer = null; // Track the current task container element
-
+	let isEditMode = false;
+	let currentTaskContainer = null;
 	addButton.addEventListener("click", function (event) {
 		event.preventDefault();
-		const taskValue = taskInput.value.trim(); // Trim the task value
+		const taskValue = taskInput.value.trim();
 
 		if (taskValue !== "") {
 			if (isEditMode) {
-				// If we are in edit mode, update the task description
 				const taskDescription = currentTaskContainer.querySelector(
 					".task-description p"
 				);
@@ -218,7 +213,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 
-	// Load tasks from local storage
 	loadTasksFromLocalStorage();
 
 	function createTask(value) {
