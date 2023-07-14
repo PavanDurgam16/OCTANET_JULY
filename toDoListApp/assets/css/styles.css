@@ -29,6 +29,7 @@ body {
 	color: var(--light);
 	margin-bottom: 1rem;
 }
+
 #error-msg {
 	padding-top: 5px;
 	font-size: 1.1em;
