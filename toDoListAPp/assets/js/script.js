@@ -51,6 +51,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	taskContainer.addEventListener("click", function (event) {
 		if (event.target.classList.contains("fa-trash-alt")) {
 			const task = event.target.closest(".task-container");
+			errorMsg.textContent = "Task deleted successfully";
+			errorMsg.style.display = "block";
+			setTimeout(function () {
+				errorMsg.style.display = "none";
+				errorMsg.style.color = "red";
+			}, 3000);
 			task.remove();
 			saveTasksToLocalStorage();
 		} else if (event.target.classList.contains("fa-edit")) {
