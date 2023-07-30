@@ -318,3 +318,15 @@ function toggleComments(commentsContainer, additionalComments) {
 		comment.classList.toggle("hidden", index >= 2);
 	});
 }
+
+// Function to show more options pop-up menu
+function showMoreOptions() {
+	const moreOptions = document.getElementById("moreOptions");
+	moreOptions.style.display = "block";
+}
+
+// Function to hide more options pop-up menu
+function hideMoreOptions() {
+	const moreOptions = document.getElementById("moreOptions");
+	moreOptions.style.display = "none";
+}
