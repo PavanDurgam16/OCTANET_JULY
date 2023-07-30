@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Instagram Clone</title>
+		<link
+			rel="shortcut icon"
+			href="assets/images/instagram.png"
+			type="image/x-icon" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="sidebar">
+				<div class="logo" data-tooltip="Instagram">
+					<img
+						src="assets/images/logotext.png"
+						alt="Instagram Logo"
+						style="width: 105px; height: 55px; margin: 25px 0 0 41px" />
+				</div>
+				<div class="links">
+					<ul class="nav-links">
+						<li>
+							<a href="#" data-tooltip="Home">
+								<i class="fas fa-home"></i>
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-tooltip="Search">
+								<i class="fas fa-search"></i>
+								<span>Search</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-tooltip="Explore">
+								<i class="far fa-compass"></i>
+								<span>Explore</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-tooltip="Reels">
+								<img
+									src="assets/images/reel.png"
+									alt="Reels picture"
+									width="30px"
+									height="30px"
+									style="margin-right: 20px; vertical-align: middle" />
+								<span>Reels</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-tooltip="Messages">
+								<i class="fa-brands fa-facebook-messenger"></i>
+								<span>Messages</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-tooltip="Notifications">
+								<i class="far fa-heart"></i>
+								<span>Notifications</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-tooltip="Create">
+								<i class="fa-regular fa-square-plus"></i>
+								<span>Create</span>
+							</a>
+						</li>
+						<li>
+							<a href="profile.html" data-tooltip="pavan_durgam_0">
+								<div class="profile">
+									<img
+										src="assets/images/profilepic.jpg"
+										alt="pavan_durgam_0's profile picture" />
+								</div>
+								<span>Profile</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="more-btn" onclick="toggleMoreOptions()">
+					<i class="fas fa-bars" data-tooltip="More"></i>
+					<span class="more-text">More</span>
+					<div class="more-options" id="moreOptions">
+						<ul>
+							<li>
+								<a href="#" data-tooltip="Settings">
+									<i class="fas fa-cog"></i>
+									<span>Settings</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-tooltip="Saved">
+									<i class="far fa-bookmark"></i>
+									<span>Saved</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-tooltip="QR Code">
+									<i class="fas fa-qrcode"></i>
+									<span>QR Code</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-tooltip="Switch Appearance">
+									<i class="fas fa-exchange-alt"></i>
+									<span>Switch Appearance</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-tooltip="Report a Problem">
+									<i class="fas fa-bug"></i>
+									<span>Report a Problem</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-tooltip="Switch Accounts">
+									<i class="fas fa-user-circle"></i>
+									<span>Switch Accounts</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-tooltip="Logout">
+									<i class="fas fa-sign-out-alt"></i>
+									<span>Logout</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<main>
+				<div class="stories">
+					<ul>
+						<li>
+							<a href="#">
+								<div class="story-circle">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,mohan_kumar"
+										alt="Mohan Kumar's story"
+										style="border-radius: 50%" />
+								</div>
+								<span class="username">mohan_kumar</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="story-circle">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,arjun_sharma"
+										alt="Arjun Sharma's story"
+										style="border-radius: 50%" />
+								</div>
+								<span class="username">arjun_sharma</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="story-circle">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,kavita_singh"
+										alt="Kavita Singh's story"
+										style="border-radius: 50%" />
+								</div>
+								<span class="username">kavita_singh</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="story-circle">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,rahul_verma"
+										alt="Rahul Verma's story"
+										style="border-radius: 50%" />
+								</div>
+								<span class="username">rahul_verma</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="story-circle">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,ananya_patil"
+										alt="Ananya Patil's story"
+										style="border-radius: 50%" />
+								</div>
+								<span class="username">ananya_patil</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="story-circle">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,sneha_sharma"
+										alt="Sneha Sharma's story"
+										style="border-radius: 50%" />
+								</div>
+								<span class="username">sneha_sharma</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="story-circle">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,rohit_verma"
+										alt="Rohit Verma's story"
+										style="border-radius: 50%" />
+								</div>
+								<span class="username">rohit_verma</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="story-circle">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,aishwarya_reddy"
+										alt="Aishwarya Reddy's story"
+										style="border-radius: 50%" />
+								</div>
+								<span class="username">aishwarya</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="story-circle">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,ananya_gupta"
+										alt="Ananya Gupta's story"
+										style="border-radius: 50%" />
+								</div>
+								<span class="username">ananya_gupta</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="story-circle">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,vivek_singh"
+										alt="Vivek Singh's story"
+										style="border-radius: 50%" />
+								</div>
+								<span class="username">vivek_singh</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="story-circle">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,neha_patil"
+										alt="Neha Patil's story"
+										style="border-radius: 50%" />
+								</div>
+								<span class="username">neha_patil</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="story-circle">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,rajesh_sharma"
+										alt="Rajesh Sharma's story"
+										style="border-radius: 50%" />
+								</div>
+								<span class="username">rajesh_sharma</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="story-circle">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,sneha_verma"
+										alt="Sneha Verma's story"
+										style="border-radius: 50%" />
+								</div>
+								<span class="username">sneha_verma</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="story-circle">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,akash_yadav"
+										alt="Akash Yadav's story"
+										style="border-radius: 50%" />
+								</div>
+								<span class="username">akash_yadav</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="story-circle">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,sanjana_sharma"
+										alt="Sanjana Sharma's story"
+										style="border-radius: 50%" />
+								</div>
+								<span class="username">sanjana_sharma</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Add the provided post HTML code here -->
+				<article class="post">
+					<div class="post__header">
+						<div class="post__profile">
+							<a href="#" target="_blank" class="post__avatar">
+								<img
+									src="https://source.unsplash.com/200x200/?portrait,person2"
+									alt="User Picture" />
+							</a>
+							<a href="#" target="_blank" class="post__user">Pavan_insta16</a>
+						</div>
+						<button class="post__more-options">
+							<i class="fas fa-ellipsis-h"></i>
+						</button>
+					</div>
+
+					<div class="post__content">
+						<div class="post__medias">
+							<img
+								class="post__media"
+								src="https://source.unsplash.com/600x450/?nature"
+								alt="Post Content" />
+						</div>
+					</div>
+
+					<div class="post__footer">
+						<div class="post__buttons">
+							<button class="post__button">
+								<i class="fa-regular fa-heart"></i>
+							</button>
+							<button class="post__button">
+								<i class="fa-regular fa-comment"></i>
+							</button>
+							<button class="post__button">
+								<i class="fa-regular fa-paper-plane"></i>
+							</button>
+							<div class="post__indicators">
+								<button class="post__button">
+									<i class="fa-regular fa-bookmark"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="post__infos">
+							<div class="post__likes">
+								<a href="#" class="post__likes-avatar">
+									<img
+										src="https://source.unsplash.com/60x60/?portrait,person5"
+										alt="User Picture" />
+								</a>
+								<span
+									>Liked by
+									<a class="post__name--underline" href="#">mani_2323</a> and
+									<a href="#">73 others</a>
+								</span>
+							</div>
+
+							<div class="post__description">
+								<span>
+									<a class="post__name--underline" href="#" target="_blank"
+										>sriram_16</a
+									>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+									iure, ipsam itaque .
+								</span>
+							</div>
+
+							<span class="post__date-time">30 minutes ago</span>
+						</div>
+					</div>
+
+					<!-- Comments -->
+					<div class="post__comments">
+						<div class="post__comment">
+							<a class="post__name--underline" href="#">mani_2323</a> Comment 1.
+							This is the first comment.
+						</div>
+						<div class="post__comment">
+							<a class="post__name--underline" href="#">user456</a> Comment 2.
+							This is the second comment.
+						</div>
+						<div class="post__comment hidden">
+							<a class="post__name--underline" href="#">user789</a> Comment 3.
+							This is the third comment.
+						</div>
+						<div class="post__comment hidden">
+							<a class="post__name--underline" href="#">user321</a> Comment 4.
+							This is the fourth comment.
+						</div>
+						<div class="post__read-more" onclick="toggleComments()">
+							Read more...
+						</div>
+					</div>
+
+					<!-- Comment Text Box -->
+					<div class="post__comment-box">
+						<input type="text" placeholder="Add a comment..." />
+						<button class="post__button post__button--primary">post</button>
+					</div>
+				</article>
+				<div id="postContainer"></div>
+
+				<!-- Side Menu -->
+				<div class="side-menu">
+					<!-- User Profile Block -->
+					<div class="user-profile">
+						<a href="#" target="_blank" class="user-avatar">
+							<img
+								src="https://source.unsplash.com/200x200/?portrait,person3"
+								alt="User Picture" />
+						</a>
+						<div class="user-info">
+							<a href="#" target="_blank">pavan_durgam_0</a>
+							<span>wor_wartmeee</span>
+						</div>
+						<button class="user-button">Switch</button>
+					</div>
+
+					<!-- Suggestion Box -->
+					<div class="suggestions-section">
+						<div class="suggestions-header">
+							<h2>Suggestions for You</h2>
+							<button>See All</button>
+						</div>
+						<div class="suggestions-content">
+							<div class="suggestion">
+								<a href="#" class="suggestion-avatar">
+									<img
+										src="https://source.unsplash.com/200x200/?portrait,person4"
+										alt="User Picture" />
+								</a>
+								<div class="suggestion-info">
+									<a href="#">Pavan_insta16</a>
+									<span>Followed by mani_23, user2 and 9 others</span>
+								</div>
+								<button class="suggestion-button">Follow</button>
+							</div>
+							<div class="suggestion">
+								<a href="#" class="suggestion-avatar">
+									<img
+										src="https://source.unsplash.com/60x60/?portrait,person5"
+										alt="User Picture" />
+								</a>
+								<div class="suggestion-info">
+									<a href="#">Pavan_insta17</a>
+									<span>Followed by mani_23, user2 and 3 others</span>
+								</div>
+								<button class="suggestion-button">Follow</button>
+							</div>
+							<div class="suggestion">
+								<a href="#" class="suggestion-avatar">
+									<img
+										src="https://source.unsplash.com/60x60/?portrait,person6"
+										alt="User Picture" />
+								</a>
+								<div class="suggestion-info">
+									<a href="#">Pavan_insta18</a>
+									<span>Followed by mani_23 and 9 others</span>
+								</div>
+								<button class="suggestion-button">Follow</button>
+							</div>
+							<div class="suggestion">
+								<a href="#" class="suggestion-avatar">
+									<img
+										src="https://source.unsplash.com/60x60/?portrait,person7"
+										alt="User Picture" />
+								</a>
+								<div class="suggestion-info">
+									<a href="#">Pavan_insta19</a>
+									<span>Followed by mani_23 and 3 others</span>
+								</div>
+								<button class="suggestion-button">Follow</button>
+							</div>
+							<div class="suggestion">
+								<a href="#" class="suggestion-avatar">
+									<img
+										src="https://source.unsplash.com/60x60/?portrait,person8"
+										alt="User Picture" />
+								</a>
+								<div class="suggestion-info">
+									<a href="#">Pavan_insta20</a>
+									<span>Followed by mani_23 and 6 others</span>
+								</div>
+								<button class="suggestion-button">Follow</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Footer Links -->
+					<div class="footer">
+						<div class="footer-links">
+							<ul class="footer-list">
+								<li class="footer-item">
+									<a class="footer-link" href="#">About</a>
+								</li>
+								<li class="footer-item">
+									<a class="footer-link" href="#">Help</a>
+								</li>
+								<li class="footer-item">
+									<a class="footer-link" href="#">Press</a>
+								</li>
+								<li class="footer-item">
+									<a class="footer-link" href="#">API</a>
+								</li>
+								<li class="footer-item">
+									<a class="footer-link" href="#">Jobs</a>
+								</li>
+								<li class="footer-item">
+									<a class="footer-link" href="#">Privacy</a>
+								</li>
+								<li class="footer-item">
+									<a class="footer-link" href="#">Terms</a>
+								</li>
+								<li class="footer-item">
+									<a class="footer-link" href="#">Locations</a>
+								</li>
+								<li class="footer-item">
+									<a class="footer-link" href="#">Top Accounts</a>
+								</li>
+								<li class="footer-item">
+									<a class="footer-link" href="#">Hashtag</a>
+								</li>
+								<li class="footer-item">
+									<a class="footer-link" href="#">Language</a><br /><br />
+									<span class="footer-copyright">
+										&copy; 2023 Instagram from Facebook</span
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<script src="assets/js/posts.js"></script>
+	</body>
+</html>

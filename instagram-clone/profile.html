@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Instagram Clone</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link
+			rel="shortcut icon"
+			href="assets/images/instagram.png"
+			type="image/x-icon" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+		<link rel="stylesheet" href="assets/css/profile.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="sidebar">
+				<div class="logo" data-tooltip="Instagram">
+					<img
+						src="assets/images/logotext.png"
+						alt="Instagram Logo"
+						style="width: 105px; height: 55px; margin: 25px 0 0 41px" />
+				</div>
+				<div class="links">
+					<ul class="nav-links">
+						<li>
+							<a href="index.html" data-tooltip="Home">
+								<i class="fas fa-home"></i>
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-tooltip="Search">
+								<i class="fas fa-search"></i>
+								<span>Search</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-tooltip="Explore">
+								<i class="far fa-compass"></i>
+								<span>Explore</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-tooltip="Reels">
+								<img
+									src="assets/images/reel.png"
+									alt="Reels picture"
+									width="26px"
+									height="26px"
+									style="margin-right: 20px; vertical-align: middle" />
+								<span>Reels</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-tooltip="Messages">
+								<i class="fa-brands fa-facebook-messenger"></i>
+								<span>Messages</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-tooltip="Notifications">
+								<i class="far fa-heart"></i>
+								<span>Notifications</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-tooltip="Create">
+								<i class="fa-regular fa-square-plus"></i>
+								<span>Create</span>
+							</a>
+						</li>
+						<li>
+							<a href="profile.html" data-tooltip="pavan_durgam_0">
+								<div class="profile">
+									<img
+										src="assets/images/profilepic.jpg"
+										alt="pavan_durgam_0's profile picture" />
+								</div>
+								<span style="font-weight: bold">Profile</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="more-btn" onclick="toggleMoreOptions()">
+					<i class="fas fa-bars" data-tooltip="More"></i>
+					<span class="more-text">More</span>
+					<div class="more-options" id="moreOptions">
+						<ul>
+							<li>
+								<a href="#" data-tooltip="Settings">
+									<i class="fas fa-cog"></i>
+									<span>Settings</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-tooltip="Saved">
+									<i class="far fa-bookmark"></i>
+									<span>Saved</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-tooltip="QR Code">
+									<i class="fas fa-qrcode"></i>
+									<span>QR Code</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-tooltip="Switch Appearance">
+									<i class="fas fa-exchange-alt"></i>
+									<span>Switch Appearance</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-tooltip="Report a Problem">
+									<i class="fas fa-bug"></i>
+									<span>Report a Problem</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-tooltip="Switch Accounts">
+									<i class="fas fa-user-circle"></i>
+									<span>Switch Accounts</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-tooltip="Logout">
+									<i class="fas fa-sign-out-alt"></i>
+									<span>Logout</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main Content -->
+		<main class="main-content">
+			<!-- Header Section -->
+			<header class="profile-header">
+				<div class="profile-container">
+					<div class="profile">
+						<div class="profile-image">
+							<img
+								src="assets/images/profilepic.jpg"
+								alt="pavan_durgam_0's profile picture" />
+						</div>
+						<div class="profile_content">
+							<div class="profile-user-settings">
+								<h3 class="profile-user-name">pavan_durgam_0</h3>
+								<button class="btn profile-edit-btn">Edit Profile</button>
+								<button class="btn profile-edit-btn">View Archive</button>
+								<button
+									class="btn profile-settings-btn"
+									aria-label="profile settings">
+									<i class="fas fa-cog" aria-hidden="true"></i>
+								</button>
+							</div>
+
+							<div class="profile-stats">
+								<span class="profile-stat-count">9</span> posts &nbsp; &nbsp;
+								<span class="profile-stat-count">551</span> followers &nbsp;
+								&nbsp;
+								<span class="profile-stat-count">802</span>
+								following
+							</div>
+
+							<div class="profile-bio">
+								<p>
+									<span class="profile-real-name">Pavan Durgam</span><br />
+									OSMANIA ! 🗺️ _______ #bhupalpally <br />Lorem ipsum dolor sit,
+									amet consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- End of profile section -->
+				</div>
+				<!-- End of profile container -->
+			</header>
+
+			<!-- Stories Section -->
+			<!-- You can add 4 stories here with Unsplash images -->
+			<div class="stories">
+				<ul>
+					<li>
+						<a href="#">
+							<div class="story-circle">
+								<img
+									src="https://source.unsplash.com/200x200/?portrait,mohan_kumar"
+									alt="Mohan Kumar's story"
+									style="border-radius: 50%" />
+							</div>
+							<span class="username">Nature</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="story-circle">
+								<img
+									src="https://source.unsplash.com/200x200/?portrait,arjun_sharma"
+									alt="Arjun Sharma's story"
+									style="border-radius: 50%" />
+							</div>
+							<span class="username">Education</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="story-circle">
+								<img
+									src="https://source.unsplash.com/200x200/?portrait,kavita_singh"
+									alt="Kavita Singh's story"
+									style="border-radius: 50%" />
+							</div>
+							<span class="username">Parties</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="story-circle">
+								<img
+									src="https://source.unsplash.com/200x200/?portrait,rahul_verma"
+									alt="Rahul Verma's story"
+									style="border-radius: 50%" />
+							</div>
+							<span class="username">New</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- Gallery Section -->
+			<section class="gallery-container">
+				<div class="gallery-buttons">
+					<button class="gallery-button" data-tooltip="Posts">
+						<i class="fas fa-th"></i>
+						<span>POSTS</span>
+					</button>
+					<button class="gallery-button" data-tooltip="Saved">
+						<i class="far fa-bookmark"></i>
+						<span>SAVED</span>
+					</button>
+					<button class="gallery-button" data-tooltip="Tagged">
+						<i class="fas fa-tags"></i>
+						<span>TAGGED</span>
+					</button>
+				</div>
+				<!-- Gallery Section -->
+				<section class="gallery">
+					<script>
+						function GetGallaryImages() {
+							const postMediaLinks = [
+								"nature",
+								"food",
+								"travel",
+								"architectures",
+								"city",
+								"man",
+								"grasshills",
+								"nature",
+								"food",
+								"cultures",
+								"womans",
+							];
+							return (
+								"https://source.unsplash.com/600x450/?" +
+								postMediaLinks[
+									Math.floor(Math.random() * postMediaLinks.length)
+								] +
+								"/landscape"
+							);
+						}
+
+						for (let i = 0; i < 12; i++) {
+							const galleryItem = document.createElement("div");
+							galleryItem.classList.add("gallery-item");
+							galleryItem.setAttribute("tabindex", "0");
+
+							const galleryImage = document.createElement("img");
+							galleryImage.src = GetGallaryImages();
+							galleryImage.classList.add("gallery-image");
+							galleryImage.alt = "Gallery Image " + (i + 1);
+
+							const galleryItemInfo = document.createElement("div");
+							galleryItemInfo.classList.add("gallery-item-info");
+
+							const ul = document.createElement("ul");
+
+							const liLikes = document.createElement("li");
+							liLikes.classList.add("gallery-item-likes");
+							liLikes.innerHTML =
+								'<span class="visually-hidden"></span><i class="fas fa-heart" aria-hidden="true"></i>   ' +
+								Math.floor(Math.random() * 100);
+
+							const liComments = document.createElement("li");
+							liComments.classList.add("gallery-item-comments");
+							liComments.innerHTML =
+								'<span class="visually-hidden"></span><i class="fas fa-comment" aria-hidden="true"></i>   ' +
+								Math.floor(Math.random() * 10);
+
+							ul.appendChild(liLikes);
+							ul.appendChild(liComments);
+							galleryItemInfo.appendChild(ul);
+							galleryItem.appendChild(galleryImage);
+							galleryItem.appendChild(galleryItemInfo);
+							document.querySelector(".gallery").appendChild(galleryItem);
+						}
+					</script>
+					<!-- End of dynamically generated gallery items -->
+				</section>
+			</section>
+
+			<!-- Footer Links -->
+			<div class="footer">
+				<div class="footer-links">
+					<ul class="footer-list">
+						<li class="footer-item">
+							<a class="footer-link" href="#">About</a>
+						</li>
+						<li class="footer-item">
+							<a class="footer-link" href="#">Help</a>
+						</li>
+						<li class="footer-item">
+							<a class="footer-link" href="#">Press</a>
+						</li>
+						<li class="footer-item">
+							<a class="footer-link" href="#">API</a>
+						</li>
+						<li class="footer-item">
+							<a class="footer-link" href="#">Jobs</a>
+						</li>
+						<li class="footer-item">
+							<a class="footer-link" href="#">Privacy</a>
+						</li>
+						<li class="footer-item">
+							<a class="footer-link" href="#">Terms</a>
+						</li>
+						<li class="footer-item">
+							<a class="footer-link" href="#">Locations</a>
+						</li>
+						<li class="footer-item">
+							<a class="footer-link" href="#">Top Accounts</a>
+						</li>
+						<li class="footer-item">
+							<a class="footer-link" href="#">Hashtag</a>
+						</li>
+						<li class="footer-item">
+							<a class="footer-link" href="#">Language</a>
+						</li>
+						<li>
+							<span class="footer-copyright">
+								&copy; 2023 Instagram from Facebook</span
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
