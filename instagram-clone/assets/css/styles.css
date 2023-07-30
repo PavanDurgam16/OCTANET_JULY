@@ -84,11 +84,12 @@ a:hover {
 
 /* More button styles */
 .more-btn {
-	margin: 80px 0 0 35px;
+	margin: 80px 0 0 0px;
 	display: flex;
 	font-size: 28px;
 	width: 100%;
 	cursor: pointer;
+	justify-content: start;
 }
 
 .more-btn:hover {
@@ -104,14 +105,31 @@ a:hover {
 }
 
 /* More options styles */
+.more-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 8px 0;
+	border-top: 1px solid #dbdbdb;
+	cursor: pointer;
+}
+
+.more-btn i {
+	margin-right: 20px;
+}
+
+.more-text {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* More options styles */
 .more-options {
 	display: none;
 	position: absolute;
-	bottom: 100%;
+	bottom: 0;
 	right: 0;
-	left: 0;
-	font-weight: 200;
-	font-size: 20px;
 	background-color: white;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	border: 1px solid #ddd;
@@ -120,11 +138,7 @@ a:hover {
 	z-index: 1;
 }
 
-.more-btn:hover {
-	background-color: #eeeeee;
-}
-
-.more-options .hide {
+.more-btn:hover .more-options {
 	display: block;
 }
 
@@ -146,10 +160,6 @@ a:hover {
 	text-decoration: none;
 	color: #262626;
 	font-size: 14px;
-}
-
-.more-options .active {
-	display: block;
 }
 
 .more-options li a i {
